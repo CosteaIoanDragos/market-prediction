@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Motorcycle Guide</h1>
+      </div>
+      <div class="topnav">
+        <a href="registration.html">Registration</a>
+        <a href="login.html">Login</a>
+    <a href="crud.html"><span class="home-symbol">&#8962;</span></a>
+    </div>
+      
+    <section class="clearfix">
+        <div class="left-column">
+            <h2>Discover </h2>
+            <h2> different types </h2>
+            <h2> of motorcycles</h2>
+
+        </div>
+        <div class="right-column">
+            <img src="F:\semestrul6\ProgramareWeb\HtmlProject\moto guide.jpg" alt="Image Description" style="display: block; margin: 0 auto;max-height: 550px; ">
+        </div>
+    </section>
+    <section class="motorcycle-type-section">
+        <h2>Choose Motorcycle Type to Learn More</h2>
+        <table class="motorcycle-table">
+            <table class="motorcycle-table">
+                <tr>
+                    <td>
+                        <a href="content.html">
+                        <img src="F:\semestrul6\ProgramareWeb\HtmlProject\Sport.jpeg" alt="Motorcycle 1" class="image">
+                        </a>
+                        <p class="motorcycle-text">Sport Bike</p>
+                    </td>
+                    <td>
+                        <a href="content.html">
+                        <img src="F:\semestrul6\ProgramareWeb\HtmlProject\Cruiser.jpeg" alt="Motorcycle 2" class="image">
+                        </a>
+                        <p class="motorcycle-text">Cruiser</p>
+                    </td>
+                    <td>
+                        <a href="content.html">
+                        <img src="F:\semestrul6\ProgramareWeb\HtmlProject\Adventure.jpeg" alt="Motorcycle 3" class="image">
+                    </a>
+                        <p class="motorcycle-text">Adventure Touring</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="content.html">
+                        <img src="F:\semestrul6\ProgramareWeb\HtmlProject\Naked.jpeg" alt="Motorcycle 4" class="image">
+                    </a>
+                        <p class="motorcycle-text">Naked Bike</p>
+                    </td>
+                    <td>
+                        <a href="content.html">
+                        <img src="F:\semestrul6\ProgramareWeb\HtmlProject\Dirt.jpeg" alt="Motorcycle 5" class="image">
+                    </a>
+                        <p class="motorcycle-text">Dirt Bike</p>
+                    </td>
+                    <td><a href="content.html">
+                        <img src="F:\semestrul6\ProgramareWeb\HtmlProject\Touring.jpeg" alt="Motorcycle 6" class="image">
+                    </a>
+                        <p class="motorcycle-text">Touring</p>
+                    </td>
+                </tr>
+        </table>
+    </section>
+    <section class="motorcycle-type-section">
+        <h2> Motorcycles manufacturers</h2>
+    <ul id="myList">
+        
+        <li><p class="motorcycle-text">Honda</p></li>
+        <li><p class="motorcycle-text">Harley Davidson</p></li>
+        <li class="hidden"><p class="motorcycle-text">Suzuki</p></li>
+        <li class="hidden"><p class="motorcycle-text">Kawasaki</p></li>
+        <li class="hidden"><p class="motorcycle-text">Triumph</p></li>
+        <li class="hidden"><p class="motorcycle-text">Yamaha</p></li>
+    </ul>
+    <button id="viewMoreBtn">View More</button>
+    </section>
+
+    <footer>
+        <div class="footer">
+        <p>&copy; Proprietatea intelectuala a lui Costea Ioan Dragos. Va rugam nu plagiati! Suckers!</p>
+    </div>
+    </footer>
+
+    <script>
+        const viewMoreBtn = document.getElementById('viewMoreBtn');
+        const hiddenItems = document.querySelectorAll('.hidden');
+
+        viewMoreBtn.addEventListener('click', () => {
+            hiddenItems.forEach(item => {
+                item.style.display = 'list-item';
+            });
+            viewMoreBtn.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
