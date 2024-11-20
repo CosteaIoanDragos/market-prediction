@@ -6,11 +6,13 @@ Table of Contents
 2. Usage
 3. Contributing
 4. License
+
 Installation: To set up the project locally, follow these steps:
 1. Clone the repository:
 git clone https://github.com/CosteaIoanDragos/market-prediction.git
 2. Navigate to the project directory:
 cd portfolio-website
+
 Usage: The project structure is as follows:
 1. login.html: Main entry point of the website.
 2. style.css:  CSS style sheets.
